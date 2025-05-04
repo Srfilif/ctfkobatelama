@@ -1,0 +1,94 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+button {
+    cursor: pointer;
+}
+.menu {
+    background-color: #21212b;
+    padding-bottom:25px;
+}
+a {
+    color:white;
+    text-decoration: none;
+}
+
+.menu ul {
+    display:flex;
+    gap:50px;
+    list-style: none;
+    font-size: 22px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+.menu li:hover {
+    text-decoration: underline #47474d;
+    cursor:pointer;
+}
+
+.image{ 
+    padding-top: 20px;
+    width: 39%;
+}
+
+.what{
+    padding-top: 18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+}
+
+.downd {
+    padding-top: 28px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+.pay {
+    --color: rgb(52, 52, 223);
+    --dark-color: color-mix(in srgb, var(--color), black 25%);
+    --light-color: color-mix(in srgb, var(--color), white 25%);
+    border-radius: 10px;
+    border: 0.5px solid var(--dark-color);
+    border-bottom-width: 8px;
+    border-top-color: var(--light-color);
+    background: var(--color);
+    color: #fff;
+    font-family: Jost, sans-serif;
+    font-size: 1.2rem;
+    padding: 0.50rem 0.95rem;
+    transition: transform 0.2s, border 0.2s;
+    &:active  {
+        border-bottom-width: 1px;
+        transform: translateY(7px);
+        background: var(--dark-color);
+    }
+}
+.mer {
+    --color: rgb(3, 0, 192);
+    --dark-color: color-mix(in srgb, var(--color), black 25%);
+    --light-color: color-mix(in srgb, var(--color), white 25%);
+    border-radius: 10px;
+    border: 0.5px solid var(--dark-color);
+    border-bottom-width: 8px;
+    border-top-color: var(--light-color);
+    background: var(--color);
+    color: #fff;
+    font-family: Jost, sans-serif;
+    font-size: 1.2rem;
+    padding: 0.50rem 0.95rem;
+    transition: transform 0.2s, border 0.2s;
+    &:active  {
+        border-bottom-width: 1px;
+        transform: translateY(7px);
+        background: var(--dark-color);
+    }
+}
