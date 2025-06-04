@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <style>
+#botonescss{
+width:300px; height:300px;
+
+margin:20px;
+background: gray;
+}
+#left{
+position: absolute;
+height:300px; width:450px;
+font-size:8px;
+opacity:1;
+background-color: #47474d;
+}
+span{
+cursor:copy;
+}
+
+#accion{
+position: absolute;
+opacity:0;
+left:auto; right:0px;
+
+top:auto; bottom:0px;
+cursor: help;
+width:160px; height:70px;
+border-radius:10px;
+background:green;
+}
+.txtac{
+position: absolute;
+user-select: none; 
+
+top:20px; left:6px;
+}
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="herramientas/botones-.css">
     <link rel="stylesheet" href="style/proyectos.css">
     <link rel="shortcut icon" href="imagenes/icon.ico" />
-    <title>kobatelama</title>
+    <title>kobatelama herramientas de desarrollo</title>
 </head>
 <body>
-    
+    <div id="accion"><h1 class="txtac">Copiado+</h1></div>
     <div class="menu">
         <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -18,15 +55,51 @@
         <li><a href="donacion.html">Donación</a></li>
         </ul>
         </div>
-    <div class="centrar">
-     <h2>Comienza a desarrollar tu web</h2> </div>
-  <div class="buttons">
-      <button class="Create"><a href=""><i class="fa-solid fa-magnifying-glass"></i> Navegar</a></button>
-      <button class="Workspace"><a href=""><i class="fa-solid fa-plus"></i> Crear</a></button>
-     <button class="Public"><a href=""><i class="fa-solid fa-cloud-arrow-up"></i> Publicar</a></button>
- </div>
  <section class="centrar" id="createdproyects">
 </section>
-<h1 style="color: red;">No disponible :/</h1>
+<h2 style="font-size:20px;">Aquí puedes encontrar varios elementos que te pueden ayudar en tu proyecto,como plantillas,extensiones,documentos,etc, no solo de html,css y js sino de varios lenguajes & aplicaciones la varia solo copiando su link desde la web, tratamos de que las herramientas no tengan casi normas para asegurar que en el desarrollo de su proyecto no le afecte en tener que colocar creditos o poner algo de dinero.  -jcp2612</h2>
+<div id="botonescss">
+<div class="boton-clasico" >Clásico</div>
+<div class="boton-estilo1">Estilo1</div>
+<div class="boton-estilo2">Estilo2</div>
+<div id="left"><h1 style="left:2px; position: absolute;"><li  style="color: rgb(66, 85, 255);" onclick="linkboton()"><span>https://kobatelama.site/herramientas/botones-.css </span></li><li>Lenguaje Css,Libre de uso,lanzado el 3/6/2025 21:44</li><li>Creado por:Jcp2612</li><li>tipos: <span style="color: rgb(101, 116, 255);">class="boton-clasico"=Clásico</span>
+  </li><li><span style="color: rgb(101, 116, 255);" onclick="estilo1()">class="boton-estilo1"=Estilo1</span></li><li><span style="color: rgb(101, 116, 255);" onclick="estilo2()">class="boton-estilo2"=Estilo2</span></li></h1> </div>
+</div>
 </body>
+<script>
+const accion = document.getElementById("accion")
+window.addEventListener("click",()=>{
+accion.style.opacity="1"
+setTimeout(function() {
+accion.style.opacity = "0"
+},1000);
+
+})
+function linkboton() {
+  
+  var t = document.createElement("textarea")
+  t.value = "https://www.kobatelama.site/herramientas/botones-.css"
+  document.body.appendChild(t);
+  t.select()
+  document.execCommand("copy")
+  document.body.removeChild(t);
+}
+function estilo1() {
+  var t = document.createElement("textarea")
+  t.value = 'class="boton-estilo1"'
+  document.body.appendChild(t);
+  t.select()
+  document.execCommand("copy")
+  document.body.removeChild(t);
+}
+function estilo2() {
+  var t = document.createElement("textarea")
+  t.value = 'class="boton-estilo2"'
+  document.body.appendChild(t);
+  t.select()
+  document.execCommand("copy")
+  document.body.removeChild(t);
+}
+</script>
 </html>
+
