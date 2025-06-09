@@ -1,0 +1,1 @@
+const x=document.getElementById("pp").addEventListener("click",e=>{window.location.href="https://paypal.me/kobatelama?country.x=AR&locale.x=es_XC"}),mp=document.getElementById("mp").addEventListener("click",e=>{window.document.write("Alias:kobatelama")});
