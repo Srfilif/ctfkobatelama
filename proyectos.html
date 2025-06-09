@@ -3,7 +3,7 @@
 <head>
     <style>
 #botonescss{
-width:300px; height:300px;
+width:450px; height:300px;
 
 margin:20px;
 background: gray;
@@ -43,40 +43,49 @@ top:20px; left:6px;
     <link rel="stylesheet" href="herramientas/botones-.css">
     <link rel="stylesheet" href="style/proyectos.css">
     <link rel="shortcut icon" href="imagenes/icon.ico" />
-    <title>kobatelama herramientas de desarrollo</title>
+    <title>Herramientas & Proyectos</title>
 </head>
 <body>
     <div id="accion"><h1 class="txtac">Copiado+</h1></div>
     <div class="menu">
+      <nav>
         <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="join.html">Unirte</a></li>
         <li><a href="proyectos.html" style="text-decoration: underline #47474d;">Plantillas</a></li>
         <li><a href="donacion.html">Donación</a></li>
         </ul>
+        </nav>
         </div>
- <section class="centrar" id="createdproyects">
-</section>
+
+ <div class="centrar" id="createdproyects"></div>
+
 <h2 style="font-size:20px;">Aquí puedes encontrar varios elementos que te pueden ayudar en tu proyecto,como plantillas,extensiones,documentos,etc, no solo de html,css y js sino de varios lenguajes & aplicaciones la varia solo copiando su link desde la web, tratamos de que las herramientas no tengan casi normas para asegurar que en el desarrollo de su proyecto no le afecte en tener que colocar creditos o poner algo de dinero.  -jcp2612</h2>
 <div id="botonescss">
 <div class="boton-clasico" >Clásico</div>
 <div class="boton-estilo1">Estilo1</div>
 <div class="boton-estilo2">Estilo2</div>
-<div id="left"><h1 style="left:2px; position: absolute;"><li  style="color: rgb(66, 85, 255);" onclick="linkboton()"><span>https://kobatelama.site/herramientas/botones-.css </span></li><li>Lenguaje Css,Libre de uso,lanzado el 3/6/2025 21:44</li><li>Creado por:Jcp2612</li><li>tipos: <span style="color: rgb(101, 116, 255);">class="boton-clasico"=Clásico</span>
+<div id="left"><h1 style="left:2px; position: absolute;"><li  style="color: rgb(66, 85, 255);" onclick="linkboton()"><span>https://kobatelama.site/herramientas/botones-.css </span></li><li>Lenguaje css,Libre de uso,lanzado el 3/6/2025 21:44</li><li>Publicado:Jcp2612</li><li>tipos: <span onclick="clasic()" style="color: rgb(101, 116, 255);">class="boton-clasico"=Clásico</span>
   </li><li><span style="color: rgb(101, 116, 255);" onclick="estilo1()">class="boton-estilo1"=Estilo1</span></li><li><span style="color: rgb(101, 116, 255);" onclick="estilo2()">class="boton-estilo2"=Estilo2</span></li></h1> </div>
 </div>
+
+
+
+
+
 </body>
 <script>
 const accion = document.getElementById("accion")
-window.addEventListener("click",()=>{
+function copi() {
 accion.style.opacity="1"
 setTimeout(function() {
 accion.style.opacity = "0"
 },1000);
+}
 
-})
+
 function linkboton() {
-  
+  copi()
   var t = document.createElement("textarea")
   t.value = "https://www.kobatelama.site/herramientas/botones-.css"
   document.body.appendChild(t);
@@ -85,6 +94,7 @@ function linkboton() {
   document.body.removeChild(t);
 }
 function estilo1() {
+  copi()
   var t = document.createElement("textarea")
   t.value = 'class="boton-estilo1"'
   document.body.appendChild(t);
@@ -93,8 +103,18 @@ function estilo1() {
   document.body.removeChild(t);
 }
 function estilo2() {
+  copi()
   var t = document.createElement("textarea")
   t.value = 'class="boton-estilo2"'
+  document.body.appendChild(t);
+  t.select()
+  document.execCommand("copy")
+  document.body.removeChild(t);
+}
+function clasic() {
+  copi()
+  var t = document.createElement("textarea")
+  t.value = 'class="boton-clasico"'
   document.body.appendChild(t);
   t.select()
   document.execCommand("copy")
