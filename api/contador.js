@@ -1,6 +1,6 @@
 let visitas = 0;
 
 export default function handler(req, res) {
-  visitas++; // se incrementa
+  visitas++; 
   res.status(200).json({ visitas });
 }
