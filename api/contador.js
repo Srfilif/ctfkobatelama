@@ -1,9 +1,14 @@
 let visitas = 0;
-console.log("hola")
+console.log("hola");
+
 export default function handler(req, res) {
-  if(req.headers['origin'] == null || req.headers['origin'].includes("www.kobatelama.site")){
+  const origin = req.headers['origin'];
+
+  if (!origin || !origin.includes("kobatelama.site")) {
+    res.status(403).json({ error: "Origen no permitido" });
     return;
   }
+
   visitas++; 
   res.status(200).json({ visitas });
 }
