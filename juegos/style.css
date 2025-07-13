@@ -1,0 +1,141 @@
+
+  
+body {
+    background-color: lightblue;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow:hidden;
+    user-select: none;
+    background:skyblue;
+}
+#naranja {
+    position:absolute;
+    top:-5.3cm
+}
+#manzana {
+    position:absolute
+}
+#anana {
+    position:absolute
+}
+#contador {
+    position:relative;
+    top:-60px;
+    font-family:'Courier New',Courier,monospace;
+    font-size:100px
+}
+#li {
+    position:absolute;
+    height:10px;
+    width:1920px;
+    left:0;
+    top:900px;
+    background:blue
+}
+#ver {
+    position:absolute;
+    left:auto;
+    right:0;
+    top:auto;
+    bottom:0
+}
+#perder {
+    visibility:hidden;
+    position:relative;
+    height:200px;
+    width:200px;
+    top:100px;
+    z-index:6;
+    border-radius:10px;
+    background:rgb(0,195,255);
+    cursor:pointer
+}
+#volver {
+    position:absolute;
+    top:-120px;
+    color:#fff;
+    user-select:none;
+    font-size:180px
+}
+.tallo {
+    position:absolute;
+    height:100px;
+    width:50px;
+    left:70px;
+    top:0;
+    background:green
+}
+#cuerpo {
+    position:absolute;
+    top:100px;
+    left:0;
+    height:300px;
+    width:200px;
+    background:rgb(255,187,39)
+}
+#cuerpom {
+    position:absolute;
+    top:100px;
+    height:100px;
+    width:100px;
+    background:red
+}
+#tallo {
+    position:absolute;
+    height:40px;
+    width:20px;
+    left:10px;
+    top:-40px;
+    background:green
+}
+#cuerp {
+    position:absolute;
+    top:100px;
+    height:100px;
+    width:100px;
+    background:rgb(255,136,0)
+}
+#tall {
+    position:absolute;
+    height:40px;
+    width:20px;
+    left:40px;
+    top:-40px;
+    background:green
+}
+#tallo {
+    position:absolute;
+    height:40px;
+    width:20px;
+    left:40px;
+    top:-40px;
+    background:green
+}
+.element {
+width: 10px;
+height: 10px;
+background: rgb(158, 158, 158);
+border-radius: 50%;
+pointer-events: none;
+}
+#regalo{
+position: absolute;
+width:100px;
+height:100px;
+background: blue;
+top:0px; bottom:auto;
+left:auto; right:0px;
+cursor: pointer;
+}
+#reg{
+position: absolute;
+
+width:100px;
+height:100px;
+left:10px;
+background: black;
+cursor: pointer;
+}
+/*jcp2612
