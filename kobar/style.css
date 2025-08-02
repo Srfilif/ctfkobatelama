@@ -1,0 +1,45 @@
+a{
+text-decoration: none;
+color: rgb(255, 253, 230);
+
+}
+a:hover{
+color:gray;
+}
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+  min-height: 100vh;
+margin: 0;
+}  
+.boton{
+display: flex;
+ margin-bottom: 20px;
+ gap: 10px;
+
+}
+
+#titulo{
+
+font-size: 100px;
+}
+
+body{
+    color: white;
+background: rgb(31, 31, 31);
+}
+#input{
+width:200px;
+height:30px;
+}
+#config{
+position: absolute;
+left:auto; right:0px;
+margin: 10px;
+user-select: none;
+}
+#config:hover{
+color: gray;
+cursor: pointer;
+}
