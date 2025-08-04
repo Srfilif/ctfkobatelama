@@ -1,15 +1,50 @@
+window.addEventListener("DOMContentLoaded", function () {
+var adsc= 0
+
+
 fetch('webs.json')
   .then(response => response.json())
   .then(data => {
  
 var x = data
-alert("este sitio esta en desarrollo, automaticamente luego de aceptar esta alerta usted se hace responsable del sitio, las web que se encuentran nuestra web no tienen nada que ver con nuestro sitio solo tomamos su link y su descripcion, aclarado esto puede ingresar al sitio con su resposabilidad")
+//alert("este sitio esta en desarrollo, automaticamente luego de aceptar esta alerta usted se hace responsable del sitio, las web que se encuentran nuestra web no tienen nada que ver con nuestro sitio solo tomamos su link y su descripcion, aclarado esto puede ingresar al sitio con su resposabilidad")
+
+fetch('plm.json')
+  .then(response => response.json())
+  .then(mp => {
+    for (let h = 0; h < mp.length; h++) {
+      for (let i = x.length - 1; i >= 0; i--) {
+        if (x[i].toLowerCase().includes(mp[h].toLowerCase())) {
+          x.splice(i, 1);
+        }
+      }
+    }
+  });
+
+ var boto =  document.getElementById("boto")
+boto.addEventListener("click",()=>{
+buscar()
+})
+window.addEventListener("keydown",(e)=>{
+if (e.keyCode===13) {
+buscar()
+}
+})
+
 
 function buscar() {
+adsc +=1
+ if (adsc=== 5 ) {
+document.getElementById("patrocinado").remove()
+document.getElementById("ads").remove()
+ }
+
 document.querySelectorAll("a").forEach(function(o) {
   o.remove();
 });
 var input = document.getElementById("input").value.trim().toLowerCase();
+
+
 
 
 
@@ -63,16 +98,18 @@ return
 }
 }
 
-window.addEventListener("keydown",(e)=>{
-if (e.keyCode===13) {
-buscar()
-}
-})
+
 
   })
 
-document.getElementById("boton").addEventListener("click",()=>{
-buscar()
+
+ 
+
 })
+
+
+
+
+
 
   //  fecha finalizacion  de extraccion de info con autorizacon del robots.txt":"1 agosto de 2025 2:17 AM (horario argentino)
