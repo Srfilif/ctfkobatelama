@@ -11,11 +11,13 @@ display: flex;
 flex-direction: column;
 align-items: center;
   min-height: 100vh;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 margin: 0;
 }  
 .boton{
 display: flex;
  margin-bottom: 20px;
+
  gap: 10px;
 
 }
@@ -42,4 +44,46 @@ user-select: none;
 #config:hover{
 color: gray;
 cursor: pointer;
+}
+#form{
+background: rgb(104, 104, 104);
+border-radius: 10px;
+display: flex;
+align-items: center;
+width:15%; height:30%;
+}
+#check {
+width:6%;
+accent-color:black;
+cursor:not-allowed;
+}
+
+
+#patrocinado{
+background: rgb(48, 48, 48);
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 10px;
+width:50%; height:auto;
+}
+
+.contac{
+  position: fixed;
+top: auto; bottom: 0px;
+  width: 100%;
+}
+.opcion{
+
+ list-style-type: none;
+}
+
+.lis{
+  display: inline;
+padding:5px;
+cursor: pointer;
+}
+
+.lis:hover{
+text-decoration: underline;
 }
