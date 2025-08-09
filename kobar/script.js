@@ -5,10 +5,11 @@ function webs() {
   o.remove();
 });
 document.querySelectorAll("img").forEach(function(O) {
-if (!img.id !=="busqueda") {
-  img.remove();
-}
+  if (O.id !== "busqueda") {
+    O.remove();
+  }
 });
+
 }
 function imga() {
   wxs=1
@@ -16,10 +17,11 @@ function imga() {
   o.remove();
 });
 document.querySelectorAll("img").forEach(function(O) {
-if (!img.id !=="busqueda") {
-  img.remove();
-}
+  if (O.id !== "busqueda") {
+    O.remove();
+  }
 });
+
 }
 function documen() {
   wxs=2
@@ -27,10 +29,11 @@ function documen() {
   o.remove();
 });
 document.querySelectorAll("img").forEach(function(O) {
-if (!img.id !=="busqueda") {
-  img.remove();
-}
+  if (O.id !== "busqueda") {
+    O.remove();
+  }
 });
+
 }
 window.addEventListener("DOMContentLoaded", function () {
 var adsc= 0
@@ -196,5 +199,9 @@ return
 
 
  
+
+})
+
+
 
   //  fecha finalizacion  de extraccion de info con autorizacon del robots.txt":"1 agosto de 2025 2:17 AM (horario argentino)
